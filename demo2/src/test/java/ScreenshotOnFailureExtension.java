@@ -87,7 +87,6 @@ public class ScreenshotOnFailureExtension
                 }
             }
             try {
-                // 現在のミリ秒時間をファイル名に含める,同じテスト名の重複を避ける
                 FileUtils.copyFile(screenshot, destFile);
                 // Apache Commons IO の機能,一時ファイルを指定した位置にコピー
                 System.out.println("📸 Screenshot taken: " + destFile.getAbsolutePath());
